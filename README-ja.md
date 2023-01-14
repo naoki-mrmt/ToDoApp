@@ -1,6 +1,11 @@
 # VolleyballScoreApp
 [English](./README.md) / 日本語
 
+|Branch|Result|
+|:--:|:--:|
+|[main](https://github.com/naoki-mrmt/ToDoApp/tree/main)|[![CI](https://github.com/naoki-mrmt/ToDoApp/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/naoki-mrmt/ToDoApp/actions/workflows/main.yml)|
+|[develop](https://github.com/naoki-mrmt/ToDoApp)|[![CI](https://github.com/naoki-mrmt/ToDoApp/actions/workflows/main.yml/badge.svg?branch=develop)](https://github.com/naoki-mrmt/ToDoApp/actions/workflows/main.yml)|
+
 ## 目次
 - [開発](#開発)
 
