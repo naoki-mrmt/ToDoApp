@@ -1,35 +1,35 @@
-# ToDoApp
-English / [日本語](./README-ja.md)
+# VolleyballScoreApp
+[English](./README.md) / 日本語
 
-## Table of Contents
-- [Development](#Development)
+## 目次
+- [開発](#開発)
 
-## Development
+## 開発
 
-### Environmental Information
+### 環境情報
 - Xcode 14.2
 - macOS Monterey 12.5+
 
-### Setup
-1. Clone the project
+### セットアップ
+1. プロジェクトのクローン
     ```shell
     git clone https://github.com/naoki-mrmt/ToDoApp.git
     cd ToDoApp
     ```
-2. Enable faster builds for Swift projects (Optional)
+2. Swiftプロジェクトのビルドを高速化 (任意)
     ```shell
     make enable-faster-builds
     ```
-3. Run ```make setup``` 
-  - Setup is complete, workspace will open in Xcode.
+3. ```make setup```を実行
+  - セットアップが完了すると、Xcodeでワークスペースが開きます
 
-### Open Project
-- pod install is complete, workspace will open in Xcode. 
+### ワークスペースを起動
+- pod installが完了すると、Xcodeでワークスペースが開きます
 ```shell
 make
 ```
 
-### Help
+### ヘルプ
 ```shell
 make help
 
