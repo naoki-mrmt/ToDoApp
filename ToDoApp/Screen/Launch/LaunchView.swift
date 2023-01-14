@@ -25,7 +25,7 @@ struct LaunchView: View {
                 .scaleEffect(vm.calculateLogoSize(state: animationState))
                 .onAppear { animationTask() }
         } else {
-            TODOListView()
+            HomeView()
         }
     }
 }

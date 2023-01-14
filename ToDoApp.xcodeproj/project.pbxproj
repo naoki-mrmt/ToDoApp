@@ -14,9 +14,9 @@
 		88341FF92972EEC0004C82BA /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88341FF82972EEC0004C82BA /* Image.xcassets */; };
 		88341FFB2972EED5004C82BA /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88341FFA2972EED5004C82BA /* Color.xcassets */; };
 		88341FFE2972EF05004C82BA /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88341FFD2972EF05004C82BA /* LaunchView.swift */; };
-		883420032972EF88004C82BA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883420022972EF88004C82BA /* HomeView.swift */; };
 		883420072972F0AB004C82BA /* AnimationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883420062972F0AB004C82BA /* AnimationState.swift */; };
 		883420092972F15B004C82BA /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883420082972F15B004C82BA /* LaunchViewModel.swift */; };
+		8834200B2972F40B004C82BA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8834200A2972F40B004C82BA /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +28,9 @@
 		88341FF82972EEC0004C82BA /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		88341FFA2972EED5004C82BA /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		88341FFD2972EF05004C82BA /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
-		883420022972EF88004C82BA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		883420062972F0AB004C82BA /* AnimationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationState.swift; sourceTree = "<group>"; };
 		883420082972F15B004C82BA /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		8834200A2972F40B004C82BA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		90C1BD908E41FD43DF49BB96 /* Pods-ToDoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoApp.release.xcconfig"; path = "Target Support Files/Pods-ToDoApp/Pods-ToDoApp.release.xcconfig"; sourceTree = "<group>"; };
 		F92CDFCFE981EF02A4BA1A86 /* Pods_ToDoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -140,7 +140,7 @@
 		88341FFF2972EF6D004C82BA /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				883420022972EF88004C82BA /* HomeView.swift */,
+				8834200A2972F40B004C82BA /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -310,8 +310,8 @@
 			files = (
 				883420072972F0AB004C82BA /* AnimationState.swift in Sources */,
 				88341FFE2972EF05004C82BA /* LaunchView.swift in Sources */,
-				883420032972EF88004C82BA /* HomeView.swift in Sources */,
 				883420092972F15B004C82BA /* LaunchViewModel.swift in Sources */,
+				8834200B2972F40B004C82BA /* HomeView.swift in Sources */,
 				88341FE32972AD89004C82BA /* ToDoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
