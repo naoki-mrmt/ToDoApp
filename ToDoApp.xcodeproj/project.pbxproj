@@ -12,6 +12,7 @@
 		88341FE52972AD89004C82BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88341FE42972AD89004C82BA /* ContentView.swift */; };
 		88341FE72972AD89004C82BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88341FE62972AD89004C82BA /* Assets.xcassets */; };
 		88341FEA2972AD89004C82BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88341FE92972AD89004C82BA /* Preview Assets.xcassets */; };
+		88341FF32972B99B004C82BA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88341FF22972B99B004C82BA /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		88341FE42972AD89004C82BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		88341FE62972AD89004C82BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88341FE92972AD89004C82BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88341FF22972B99B004C82BA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		90C1BD908E41FD43DF49BB96 /* Pods-ToDoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoApp.release.xcconfig"; path = "Target Support Files/Pods-ToDoApp/Pods-ToDoApp.release.xcconfig"; sourceTree = "<group>"; };
 		F92CDFCFE981EF02A4BA1A86 /* Pods_ToDoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				88341FE42972AD89004C82BA /* ContentView.swift */,
 				88341FE62972AD89004C82BA /* Assets.xcassets */,
 				88341FE82972AD89004C82BA /* Preview Content */,
+				88341FF22972B99B004C82BA /* Settings.bundle */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				66AE64B09ADF4D9FE5D39508 /* Pods-ToDoApp.debug.xcconfig */,
 				90C1BD908E41FD43DF49BB96 /* Pods-ToDoApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +105,8 @@
 				88341FDB2972AD88004C82BA /* Sources */,
 				88341FDC2972AD88004C82BA /* Frameworks */,
 				88341FDD2972AD88004C82BA /* Resources */,
+				88341FF02972B94F004C82BA /* Run Script LicensePlist */,
+				88341FF12972B963004C82BA /* Run Script Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -152,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88341FEA2972AD89004C82BA /* Preview Assets.xcassets in Resources */,
+				88341FF32972B99B004C82BA /* Settings.bundle in Resources */,
 				88341FE72972AD89004C82BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +164,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		88341FF02972B94F004C82BA /* Run Script LicensePlist */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script LicensePlist";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$ENABLE_PREVIEW\" == \"YES\" ]; then\n  echo \"preview mode\"\n  exit 0\nfi\n\n${PODS_ROOT}/LicensePlist/license-plist --output-path \"$TARGET_NAME/Settings.bundle\" --github-token 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\n\n";
+		};
+		88341FF12972B963004C82BA /* Run Script Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$ENABLE_PREVIEW\" == \"YES\" ]; then\n  echo \"preview mode\"\n  exit 0\nfi\n\n${PODS_ROOT}/SwiftLint/swiftlint lint\n";
+		};
 		F451B32372073A7FA09175AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
