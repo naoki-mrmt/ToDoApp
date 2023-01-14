@@ -11,6 +11,7 @@ struct LaunchView: View {
     // MARK: - Property Wrappers
     @State private var isLoading = true
     @State private var animationState: AnimationState = .normal
+    @ObservedObject private var vm = LaunchViewModel()
 
     // MARK: - Properties
     private let logoSize = UIScreen.main.bounds.height * 0.4
@@ -21,7 +22,7 @@ struct LaunchView: View {
             Image("logo")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .scaleEffect(calculateLogoSize())
+                .scaleEffect(vm.calculateLogoSize(state: animationState))
                 .onAppear { animationTask() }
         } else {
             TODOListView()
@@ -31,17 +32,6 @@ struct LaunchView: View {
 
 // MARK: - Method
 extension LaunchView {
-    private func calculateLogoSize() -> Double {
-        switch animationState {
-        case .normal:
-            return 0.2
-        case .compress:
-            return 0.18
-        case .expand:
-            return 10.0
-        }
-    }
-
     private func animationTask() {
         Task {
             try await Task.sleep(for: .seconds(0.75))
